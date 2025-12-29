@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshita Bhawsar | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'pixel': ['"Press Start 2P"', 'cursive'],
+              'retro': ['"VT323"', 'monospace'],
+            },
+            colors: {
+              'retro-bg': '#1a1b26',
+              'retro-green': '#41fa75',
+              'retro-purple': '#bd93f9',
+              'retro-pink': '#ff79c6',
+              'retro-yellow': '#f1fa8c',
+              'retro-cyan': '#8be9fd',
+              'retro-comment': '#6272a4',
+            },
+            boxShadow: {
+              'pixel': '4px 4px 0px 0px rgba(0,0,0,0.5)',
+              'pixel-hover': '2px 2px 0px 0px rgba(0,0,0,0.5)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1a1b26;
+        color: #f8f8f2;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #282a36; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #6272a4; 
+        border: 2px solid #1a1b26;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #bd93f9; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
