@@ -8,21 +8,26 @@ const messages = [
   "Pixel art is awesome 👾",
   "Let's code something! 💻"
 ];
-
 const PixelAvatar: React.FC = () => {
   const [msgIndex, setMsgIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleClick = () => {
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
     setMsgIndex((prev) => (prev + 1) % messages.length);
+  };
+
+  // Handle mouse leave - hide bubble
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (
     <div 
       className="relative group cursor-pointer inline-block"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onClick={handleClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <style>{`
         @keyframes gentle-bounce {

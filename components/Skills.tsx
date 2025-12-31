@@ -6,15 +6,15 @@ const Skills: React.FC = () => {
   const categories = [
     {
       title: "Languages",
-      items: ["C++", "JavaScript", "TypeScript", "HTML5", "CSS3"]
+      items: ["C++", "JavaScript", "TypeScript"]
     },
     {
       title: "Frameworks/Tech",
-      items: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Redux", "Tailwind CSS"]
+      items: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux", "Tailwind CSS"]
     },
     {
       title: "Developer Tools",
-      items: ["VS Code", "Postman", "Git/GitHub", "Vite", "Chrome DevTools"]
+      items: [ "Postman", "Git/GitHub", "Vite",  "Firebase",]
     }
   ];
 

@@ -27,6 +27,18 @@ const experiences: ExperienceType[] = [
       "Collaborated cross-functionally to resolve critical bugs and improve performance."
     ],
     link: "https://educerns.com"
+  },
+    {
+    company: "Educerns",
+    role: "Frontend Developer Intern",
+    duration: "May 2025 - July 2025",
+    color: "border-retro-green",
+    description: [
+      "Developed and optimized user-centric UI components for two SaaS platforms.",
+      "Led end-to-end feature development for a dashboard with advanced search.",
+      "Collaborated cross-functionally to resolve critical bugs and improve performance."
+    ],
+    link: "https://educerns.com"
   }
 ];
 

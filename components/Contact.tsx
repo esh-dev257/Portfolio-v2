@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
                 <div className="mt-8">
                     <h4 className="font-pixel text-xs text-retro-yellow mb-4 border-b border-gray-600 pb-2">Connect via Network</h4>
                     <div className="flex gap-4">
-                        <a href="https://www.linkedin.com/in/eshita-bhawsar-3286b6251/" target="_blank" rel="noreferrer" className="bg-slate-900 p-3 border-2 border-white hover:border-retro-cyan hover:bg-slate-800 transition-all shadow-pixel active:translate-y-1 active:shadow-none">
+                        <a href="https://www.linkedin.com/in/eshita-bhawsar-552a82255/" target="_blank" rel="noreferrer" className="bg-slate-900 p-3 border-2 border-white hover:border-retro-cyan hover:bg-slate-800 transition-all shadow-pixel active:translate-y-1 active:shadow-none">
                             <Linkedin className="text-white" />
                         </a>
                         <a href="https://github.com/esh-dev257" target="_blank" rel="noreferrer" className="bg-slate-900 p-3 border-2 border-white hover:border-retro-green hover:bg-slate-800 transition-all shadow-pixel active:translate-y-1 active:shadow-none">
