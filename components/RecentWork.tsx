@@ -1,7 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import SectionHeader from './SectionHeader';
 import { Monitor, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import RetroButton from './RetroButton';
+
+import Educerns from "../assets/educerns.png"
+import Vizuara from "../assets/vizuara.ai.png"
+import FirstPrincipleLabs from "../assets/first-principle-labs.png"
+import ResearchVizuara from "../assets/research-vizuara.png"
 
 const RecentWork: React.FC = () => {
   const works = [
@@ -11,16 +16,36 @@ const RecentWork: React.FC = () => {
       status: "Production",
       tech: ["React", "Firebase"],
       color: "border-retro-green",
-      desc: "Migrated production systems to React stack."
+      desc: "Migrated production systems to React stack.",
+      img: Vizuara
+    },
+    {
+      title: "First Principle Labs",
+      url: "https://firstprinciplelabs.ai/",
+      status: "Live",
+      tech: ["React", "Tailwind"],
+      color: "border-retro-purple",
+      desc: "Built from scratch",
+      img: FirstPrincipleLabs
+    },
+    {
+      title: "Research Vizuara",
+      url: "https://research.vizuara.ai/",
+      status: "Live",
+      tech: ["Next.js", "Tailwind"],
+      color: "border-retro-green",
+      desc: "Optimized user-centric UI components.",
+      img: ResearchVizuara
     },
     {
       title: "Educerns",
-      url: "https://educerns.com",
+      url: "https://educerns.org/",
       status: "Live Beta",
       tech: ["Next.js", "Tailwind"],
       color: "border-retro-purple",
-      desc: "Optimized user-centric UI components."
-    }
+      desc: "Optimized user-centric UI components.",
+      img: Educerns
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,6 +59,16 @@ const RecentWork: React.FC = () => {
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + works.length) % works.length);
   };
+
+  // Auto-slide timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 7000); // 7 seconds
+
+    // Cleanup interval on unmount or when currentIndex changes
+    return () => clearInterval(timer);
+  }, [currentIndex]); // Reset timer when user manually navigates
 
   // Swipe handlers
   const onTouchStart = (e: React.TouchEvent) => {
@@ -92,15 +127,13 @@ const RecentWork: React.FC = () => {
                  {/* Screen Container with Curvature */}
                  <div className="bg-black overflow-hidden relative aspect-video rounded-lg shadow-[inset_0_0_20px_rgba(0,0,0,1)] border border-gray-800 group">
                     
-                    {/* Content (Iframe or Image) */}
+                    {/* Content (Image Preview) */}
                     <div className="w-full h-full relative z-0">
-                        <iframe 
-                        key={currentWork.url}
-                        src={currentWork.url} 
-                        title={`${currentWork.title} Preview`}
-                        className="w-full h-full object-cover opacity-80 pointer-events-none"
-                        scrolling="no"
-                        loading="lazy"
+                        <img 
+                          key={currentWork.title}
+                          src={currentWork.img} 
+                          alt={`${currentWork.title} Preview`}
+                          className="w-full h-full object-cover opacity-80"
                         />
                     </div>
 

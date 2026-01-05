@@ -16,7 +16,7 @@ const Skills: React.FC = () => {
       title: "Developer Tools",
       items: [ "Postman", "Git/GitHub", "Vite",  "Firebase",]
     }
-  ];
+  ];  
 
   return (
     <section id="skills" className="py-16 px-4 md:px-8 max-w-6xl mx-auto bg-slate-900 border-y-4 border-white">

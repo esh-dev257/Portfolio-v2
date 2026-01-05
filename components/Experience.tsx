@@ -75,7 +75,7 @@ const Experience: React.FC = () => {
 
             <ul className="space-y-3">
               {exp.description.map((item, i) => (
-                <li key={i} className="flex items-start font-retro text-lg text-gray-300">
+                <li key={i} className="flex items-start font-retro text-xl text-gray-300">
                   <span className="text-retro-green mr-2">{'>'}</span>
                   {item}
                 </li>
