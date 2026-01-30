@@ -313,7 +313,7 @@ const Stats: React.FC = () => {
 
   return (
     <section id="stats" className="py-16 px-4 md:px-8 max-w-6xl mx-auto">
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;
@@ -334,46 +334,46 @@ const Stats: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         
         {/* Github Activity Card */}
-        <div className="bg-slate-900 border-4 border-retro-green p-6 relative h-full">
+        <div className="bg-slate-900 border-4 border-retro-green p-6 relative flex flex-col h-full">
           <div className="absolute -top-3 left-4 bg-retro-bg px-2">
             <h3 className="flex items-center gap-2 font-pixel text-sm text-retro-green">
               <Github size={16} /> ACTIVITY
             </h3>
           </div>
           
-          <div className="mt-4">
+          <div className="mt-4 flex-grow flex flex-col justify-center">
             {/* Calendar Container */}
-            <div className="bg-slate-800 border-2 border-dashed border-slate-700 p-4 rounded-sm">
-              <div className="mb-3">
+            <div className="bg-slate-800 border-2 border-dashed border-slate-700 p-6 rounded-sm w-full h-full flex flex-col justify-center">
+              <div className="mb-4">
                 <p className="font-pixel text-xs text-gray-400">LAST 4 MONTHS</p>
               </div>
               
               {/* GitHub Calendar with last 4 months */}
-              <div className="github-calendar-wrapper" style={{ fontSize: '11px' }}>
+              <div className="github-calendar-wrapper flex justify-center w-full" style={{ fontSize: '14px' }}>
                 <GitHubCalendar
                   username={GITHUB_USERNAME}
                   transformData={selectLastMonths}
                   theme={retroTheme}
-                  blockSize={10}
-                  blockMargin={2}
-                  fontSize={11}
-                  hideColorLegend={true}
-                  hideTotalCount={true}
+                  blockSize={14}
+                  blockMargin={4}
+                  fontSize={14}
+                  renderColorLegend={() => <></>}
                   style={{
                     fontFamily: 'monospace',
+                    maxWidth: '100%'
                   }}
                 />
               </div>
 
               {/* Custom Legend */}
-              <div className="flex items-center justify-between mt-4 pt-3 border-t border-slate-700">
+              <div className="flex items-center justify-between mt-6 pt-3 border-t border-slate-700">
                 <div className="flex items-center gap-2">
                   <span className="font-pixel text-[9px] text-gray-500">LESS</span>
                   <div className="flex gap-1">
                     {['#0f172a', '#1e3a2e', '#2d5a3d', '#3b7a4c', '#4ade80'].map((color, i) => (
                       <div 
                         key={i}
-                        className="w-2 h-2 border border-slate-600"
+                        className="w-3 h-3 border border-slate-600"
                         style={{ backgroundColor: color }}
                       />
                     ))}
@@ -382,26 +382,18 @@ const Stats: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Stats Summary */}
-            <div className="mt-4 bg-slate-800 border border-slate-700 p-3">
-              <p className="font-retro text-sm text-center text-white">
-                Continuous Deployment Streak
-              </p>
-              <p className="font-pixel text-[10px] text-center text-gray-400 mt-1">
-                Building & Shipping Code Daily
-              </p>
-            </div>
           </div>
           
-          <div className="mt-4 text-center">
+          <div className="mt-6 flex justify-center">
             <a 
               href={`https://github.com/${GITHUB_USERNAME}`} 
               target="_blank" 
               rel="noreferrer" 
-              className="text-retro-green font-pixel text-xs hover:underline cursor-pointer"
+              className="w-full"
             >
-              Visit Github Profile {'>'}
+              <RetroButton variant="primary" className="w-full flex items-center justify-center gap-2">
+                 Visit Github Profile <ExternalLink size={16}/>
+              </RetroButton>
             </a>
           </div>
         </div>

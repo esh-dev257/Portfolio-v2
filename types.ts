@@ -18,3 +18,15 @@ export interface SkillCategory {
   title: string;
   skills: string[];
 }
+
+  export interface ParallaxLayer {
+  id: string;
+  src: string;
+  speed: number; // 0 = static, 1 = moves with scroll
+  zIndex: number;
+  alt: string;
+}
+
+export interface ScrollState {
+  scrollY: number;
+}
