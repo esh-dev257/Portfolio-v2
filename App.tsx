@@ -25,7 +25,7 @@ function App() {
         {/* Simple Navigation Bar */}
         <nav className="fixed top-0 left-0 w-full bg-slate-900/90 border-b-4 border-white z-50 px-4 py-3 backdrop-blur-sm">
             <div className="max-w-6xl mx-auto flex justify-between items-center">
-                <span className="font-pixel text-retro-yellow text-xs sm:text-sm md:text-base animate-pulse">Insert Coin to Start</span>
+                <span className="font-pixel mt-1 text-retro-yellow text-xs sm:text-sm md:text-base animate-pulse"></span>
                 <div className="hidden md:flex gap-6 font-pixel text-[10px]">
                     <a href="#experience" className="text-white hover:text-retro-green hover:underline">Experience</a>
                     <a href="#recent-work" className="text-white hover:text-retro-cyan hover:underline">Live</a>
@@ -50,7 +50,6 @@ function App() {
 
         <footer className="bg-black py-6 text-center border-t-4 border-white">
              <p className="font-retro text-lg text-gray-500">© 2025 Eshita Bhawsar. All rights reserved.</p>
-             <p className="font-pixel text-[8px] text-gray-700 mt-2">PRESS START TO CONTINUE</p>
         </footer>
       </div>
     </div>
