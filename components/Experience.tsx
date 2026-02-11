@@ -5,14 +5,17 @@ import { Briefcase, ExternalLink } from "lucide-react";
 
 const experiences: ExperienceType[] = [
   {
-    company: "Vizuara AI ",
+    company: "Vizuara AI",
     role: "Full Stack Developer Intern",
     duration: "Sept 2025 - Jan 2026",
     color: "border-retro-green",
     description: [
-      "Migrated two large-scale production systems from WordPress to React, TypeScript, and Firebase.",
-      "Reduced page-load time by 40% for 10k+ monthly active users.",
-      "Rebuilt complete landing pages using reusable component architecture.",
+      "Led system migration from WordPress to a React + Firebase architecture, improving overall platform performance by 40% for 10,000+ monthly active users.",
+      "Developed the Vizuara.ai landing page, service pages, and admin-controlled pop-up features using modular and reusable React components.",
+      "Integrated Google reCAPTCHA v3 to enhance security and prevent spam submissions.",
+      "Architected and built the First Principle Labs platform using React.js, currently used by industry professionals.",
+      "Engineered the Research Platform frontend, managing complex state logic and structured admin dashboard workflows.",
+      "Designed high-conversion UI for Flyvidesh, ensuring cross-browser compatibility and mobile responsiveness.",
     ],
     link: "https://vizuara.com",
   },
@@ -22,11 +25,12 @@ const experiences: ExperienceType[] = [
     duration: "May 2025 - July 2025",
     color: "border-retro-purple",
     description: [
-      "Developed and optimized user-centric UI components for two SaaS platforms.",
-      "Led end-to-end feature development for a dashboard with advanced search.",
-      "Collaborated cross-functionally to resolve critical bugs and improve performance.",
+      "Developed and optimized multiple product pages including GST Simulator, EduSkill Exam Platform, and the main website using React and Tailwind CSS.",
+      "Converted Figma designs into pixel-perfect, reusable UI components following best frontend practices.",
+      "Actively participated in code reviews and product discussions for a platform built for Pan-India usage, improving overall user experience by approximately 50%.",
+      "Implemented responsive design principles to enhance mobile usability and increase user engagement.",
     ],
-    link: "https://educerns.com",
+    link: "https://educerns.org/",
   },
   {
     company: "Jobsdoor360",
@@ -34,9 +38,10 @@ const experiences: ExperienceType[] = [
     duration: "June 2024 - July 2024",
     color: "border-retro-green",
     description: [
-      "Developed and optimized user-centric UI components for two SaaS platforms.",
-      "Led end-to-end feature development for a dashboard with advanced search.",
-      "Collaborated cross-functionally to resolve critical bugs and improve performance.",
+      "Worked on a live production website under mentorship, enhancing multiple sections and implementing new features.",
+      "Collaborated with the development team to optimize website performance and improve overall user experience.",
+      "Resolved critical UI bugs and contributed to performance improvements in a real-world environment.",
+      "Strengthened practical knowledge of frontend workflows, version control, and team collaboration.",
     ],
     link: "https://educerns.com",
   },
@@ -45,10 +50,7 @@ const experiences: ExperienceType[] = [
 const Experience: React.FC = () => {
   return (
     <section id="experience" className="py-16 px-4 md:px-8 max-w-6xl mx-auto">
-      <SectionHeader
-        title="Mission Log / Experience"
-        icon={<Briefcase size={32} />}
-      />
+      <SectionHeader title="Experience " icon={<Briefcase size={32} />} />
 
       <div className="space-y-8">
         {experiences.map((exp, index) => (

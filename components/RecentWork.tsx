@@ -10,43 +10,53 @@ import ResearchVizuara from "../assets/research-vizuara.png"
 
 const RecentWork: React.FC = () => {
   const works = [
-    {
-      title: "Vizuara",
-      url: "https://vizuara.com",
-      status: "Production",
-      tech: ["React", "Firebase"],
-      color: "border-retro-green",
-      desc: "Migrated production systems to React stack.",
-      img: Vizuara
-    },
-    {
-      title: "First Principle Labs",
-      url: "https://firstprinciplelabs.ai/",
-      status: "Live",
-      tech: ["React", "Tailwind"],
-      color: "border-retro-purple",
-      desc: "Built from scratch",
-      img: FirstPrincipleLabs
-    },
-    {
-      title: "Research Vizuara",
-      url: "https://research.vizuara.ai/",
-      status: "Live",
-      tech: ["Next.js", "Tailwind"],
-      color: "border-retro-green",
-      desc: "Optimized user-centric UI components.",
-      img: ResearchVizuara
-    },
-    {
-      title: "Educerns",
-      url: "https://educerns.org/",
-      status: "Live Beta",
-      tech: ["Next.js", "Tailwind"],
-      color: "border-retro-purple",
-      desc: "Optimized user-centric UI components.",
-      img: Educerns
-    },
-  ];
+  {
+    title: "Vizuara",
+    url: "https://vizuara.com",
+    status: "Production",
+    tech: ["React", "Firebase"],
+    color: "border-retro-green",
+    desc: "Led migration from WordPress to a scalable React + Firebase architecture, improving performance and enhancing user experience for 10,000+ monthly users.",
+    img: Vizuara
+  },
+  {
+    title: "Fly-Videsh",
+    url: "https://flyvidesh.online",
+    status: "Production",
+    tech: ["React", "Firebase"],
+    color: "border-retro-green",
+    desc: "Designed and developed a high-conversion, responsive platform with optimized UI components and seamless cross-browser compatibility.",
+    img: Vizuara
+  },
+  {
+    title: "First Principle Labs",
+    url: "https://firstprinciplelabs.ai/",
+    status: "Live",
+    tech: ["React", "Tailwind"],
+    color: "border-retro-purple",
+    desc: "Architected and built the platform from scratch using modular React components and clean UI design for industry professionals.",
+    img: FirstPrincipleLabs
+  },
+  {
+    title: "Research Vizuara",
+    url: "https://research.vizuara.ai/",
+    status: "Live",
+    tech: ["Next.js", "Tailwind", "Firebase"],
+    color: "border-retro-green",
+    desc: "Engineered a dynamic research platform with complex state management, admin workflows, and performance-optimized UI.",
+    img: ResearchVizuara
+  },
+  {
+    title: "Educerns",
+    url: "https://educerns.org/",
+    status: "Live",
+    tech: ["React.js", "Tailwind", "MongoDB", "Node.js", "Express"],
+    color: "border-retro-purple",
+    desc: "Developed and optimized full-stack features including responsive UI, backend integration, and performance improvements for Pan-India users.",
+    img: Educerns
+  },
+];
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const touchStart = useRef<number | null>(null);
