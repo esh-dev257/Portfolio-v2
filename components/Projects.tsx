@@ -114,88 +114,108 @@ const Projects: React.FC = () => {
         <SectionHeader title="AI / ML Projects" icon={<Rocket size={28} />} />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {/* Titanic */}
-        <div className="bg-slate-900 border-4 border-retro-purple p-6">
-          <h3 className="font-pixel text-lg text-retro-purple mb-4">
-            Titanic Survival Prediction
-          </h3>
+        <div className="bg-slate-900 border-4 border-retro-purple p-6 hover:shadow-retro-purple transition-all">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-pixel text-xl text-retro-purple">
+              Titanic Survival Prediction
+            </h3>
+            <span className="text-retro-purple text-2xl">🚢</span>
+          </div>
 
-          <iframe
-            src="https://titanic-expedition-ml-theta.vercel.app/"
-            title="Titanic ML"
-            className="w-full h-64 border-2 border-gray-700 mb-4"
-          />
+          <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+            Machine learning model that predicts passenger survival on the
+            Titanic based on various features like age, class, and gender.
+          </p>
+
+         
 
           <a
             href="https://titanic-expedition-ml-theta.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block"
           >
-            <RetroButton variant="primary">Live Demo</RetroButton>
+            <RetroButton variant="primary">View Project →</RetroButton>
           </a>
         </div>
 
         {/* Brain Tumor */}
-        <div className="bg-slate-900 border-4 border-retro-green p-6">
-          <h3 className="font-pixel text-lg text-retro-green mb-4">
-            Brain Tumor Detection
-          </h3>
+        <div className="bg-slate-900 border-4 border-retro-green p-6 hover:shadow-retro-green transition-all">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-pixel text-xl text-retro-green">
+              Brain Tumor Detection
+            </h3>
+            <span className="text-retro-green text-2xl">🧠</span>
+          </div>
 
-          <iframe
-            src="https://brain-tumor-prediction-five.vercel.app/"
-            title="Brain Tumor ML"
-            className="w-full h-64 border-2 border-gray-700 mb-4"
-          />
+          <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+            Deep learning model for detecting and classifying brain tumors from
+            MRI scans using convolutional neural networks.
+          </p>
+
+         
 
           <a
             href="https://brain-tumor-prediction-five.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block"
           >
-            <RetroButton variant="primary">Live Demo</RetroButton>
+            <RetroButton variant="primary">View Project →</RetroButton>
           </a>
         </div>
 
         {/* Modify AI */}
-        <div className="bg-slate-900 border-4 border-retro-pink p-6">
-          <h3 className="font-pixel text-lg text-retro-pink mb-4">
-            Modify Images & Trick AI
-          </h3>
+        <div className="bg-slate-900 border-4 border-retro-pink p-6 hover:shadow-retro-pink transition-all">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-pixel text-xl text-retro-pink">
+              Modify Images & Trick AI
+            </h3>
+            <span className="text-retro-pink text-2xl">🎨</span>
+          </div>
 
-          <iframe
-            src="https://modify-images-and-trick-ai.vercel.app/"
-            title="Modify AI"
-            className="w-full h-64 border-2 border-gray-700 mb-4"
-          />
+          <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+            Adversarial attack demonstration showing how to modify images to
+            fool AI classification models.
+          </p>
+
+         
 
           <a
             href="https://modify-images-and-trick-ai.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block"
           >
-            <RetroButton variant="primary">Live Demo</RetroButton>
+            <RetroButton variant="primary">View Project →</RetroButton>
           </a>
         </div>
 
         {/* Handwriting */}
-        <div className="bg-slate-900 border-4 border-retro-cyan p-6">
-          <h3 className="font-pixel text-lg text-retro-cyan mb-4">
-            Handwriting Recognition
-          </h3>
+        <div className="bg-slate-900 border-4 border-retro-cyan p-6 hover:shadow-retro-cyan transition-all">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-pixel text-xl text-retro-cyan">
+              Handwriting Recognition
+            </h3>
+            <span className="text-retro-cyan text-2xl">✍️</span>
+          </div>
 
-          <iframe
-            src="https://handwriting-recognition-xi.vercel.app/"
-            title="Handwriting Recognition"
-            className="w-full h-64 border-2 border-gray-700 mb-4"
-          />
+          <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+            Neural network model that recognizes handwritten digits and
+            characters with real-time drawing interface.
+          </p>
+
+          
 
           <a
             href="https://handwriting-recognition-xi.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block"
           >
-            <RetroButton variant="primary">Live Demo</RetroButton>
+            <RetroButton variant="primary">View Project →</RetroButton>
           </a>
         </div>
       </div>
